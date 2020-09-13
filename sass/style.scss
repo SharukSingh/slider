@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP";
+    --base-color: #021b47;
+    color: var(--base-color);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+h2 {
+    font-family: "Playfair Display";
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: var(--base-color);
+    margin-bottom: 16px;
+}
+p {
+    margin-bottom: 16px;
+    width: 80%;
+}
+a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px solid #fceadb;
+}
+
+main {
+    margin-top: 5rem;
+    height: 70vh;
+    z-index: 2;
+    position: relative;
+
+    /* display stuff */
+    display: flex;
+}
+
+.text-container {
+    flex-basis: 45%;
+    padding-top: 30px;
+    padding-left: 116px;
+    padding-right: 16px;
+    position: relative;
+}
+
+.slider-container {
+    flex-basis: 55%;
+    min-width: 0;
+    height: 90%;
+}
+
+.blue-half {
+    height: 100vh;
+    width: 42%;
+    background-color: var(--base-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+@import "slider";
